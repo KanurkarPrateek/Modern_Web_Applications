@@ -2,28 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Navigation Bar with Logo on Right</title>
     <style>
-        ul{
-            margin: 10px,50px;
-            align-items: end;
-            list-style-type: none;
-            display: block;
-            background-color: grey;
-
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
         }
-        li{
-            display: inline;
-            padding: 50px;
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            padding: 10px 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 16px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .logo img {
+            float: left;
+            max-height: 40px;
+            justify-content: start ;
         }
     </style>
 </head>
 <body>
-    <ul>
-        <li>Home</li>
-        <li>About us</li>
-        <li>Contact</li>
-    </ul>
+
+<nav>
+    <div class="logo">
+        <img src="Logo.png" alt="Logo">
+    </div>
+    <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </div>
+    
+</nav>
+
 </body>
 </html>
