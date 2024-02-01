@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="text-center ">
+    <div class="bg-slate-200 h-60 w-2/5">
+    <h1 class="font-bold text-4xl mt-8">Welcome to JavaScript Basics!</h1>
+
+    <p id="demo" class="font-semibold mt-5 text-lg">This paragraph will change with JavaScript.</p>
+
+    <button id="myButton" class="h-12 w-32 mt-4 rounded-xl border-blue-300  bg-slate-400">Click me</button>
+
+    <script>
+        // Variables and Data Types
+        var myNumber = 10;
+        var myString = "Hello, World!";
+        var isTrue = true;
+
+        // Functions
+        function greet(name) {
+            alert("Hello, " + name + "!");
+        }
+
+        // Event Listener
+        document.getElementById("myButton").addEventListener("click", function() {
+            // DOM Manipulation
+            document.getElementById("demo").innerHTML = "Button clicked!";
+
+            // Conditional Statement
+            var userName = prompt("Enter your name:");
+            if (userName) {
+                greet(userName);
+            } else {
+                alert("You didn't enter a name.");
+            }
+        });
+    </script>
+    </div>
+</body>
+</html>

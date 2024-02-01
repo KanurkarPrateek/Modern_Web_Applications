@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <style>
+        /* Some basic styling for demonstration purposes */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        input, button {
+            margin: 5px;
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Simple Calculator</h1>
+
+    <label for="num1">Enter first number:</label>
+    <input type="number" id="num1">
+
+    <label for="operator">Select operator:</label>
+    <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+
+    <label for="num2">Enter second number:</label>
+    <input type="number" id="num2">
+
+    <button onclick="calculate()">Calculate</button>
+
+    <p id="result">Result will appear here.</p>
+
+    <script>
+        function calculate() {
+            // Get values from input fields
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+            var operator = document.getElementById("operator").value;
+
+            // Perform calculation based on the operator
+            var result;
+            switch (operator) {
+                case "+":
+                    result = num1 + num2;
+                    break;
+                case "-":
+                    result = num1 - num2;
+                    break;
+                case "*":
+                    result = num1 * num2;
+                    break;
+                case "/":
+                    // Check for division by zero
+                    if (num2 !== 0) {
+                        result = num1 / num2;
+                    } else {
+                        alert("Error: Division by zero.");
+                        return; // exit the function
+                    }
+                    break;
+                default:
+                    alert("Invalid operator");
+                    return; // exit the function
+            }
+
+            // Display the result
+            document.getElementById("result").innerHTML = "Result: " + result;
+        }
+    </script>
+
+</body>
+</html>
