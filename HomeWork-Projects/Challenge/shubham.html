@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="navigation.js"></script>
     <title>30 Days Code Challenge</title>
     <style>
         body {
@@ -18,7 +19,20 @@
             text-align: center;
             padding: 20px;
         }
+        button {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
 
+        button:hover {
+            background-color: #2980b9;
+        }
         section {
             max-width: 800px;
             margin: 20px auto;
@@ -88,47 +102,55 @@
 
     <header>
         <h1>30 Days Code Challenge</h1>
+        <nav>
+            <button onclick="navigateTo('shubham')">Shubham</button>
+            <button onclick="navigateTo('pawan')">Pawan</button>
+        </nav>
     </header>
-
+    
     <section>
+        <h2>Welcome to Shubham's Page!</h2>
+        <p>This is the content for Pawan's page.</p>
+    
         <div class="challenge-banner">
             <img src="./Shubham more.png" alt="30 Days Code Challenge Banner">
-            <p>Join our 30 Days Code Challenge and improve your coding skills!</p>
         </div>
         <h2>Challenge Details</h2>
         <p>This is a 30-day coding challenge designed to help you enhance your programming skills. Each day, you'll receive a new coding task to solve. Get ready to level up your coding game!</p>
+        
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Video Link</th>
+            </tr>
+            <!-- Repeat the following row for each day -->
+            <tr>
+                <td>Day 1</td>
+                <td><a href="https://www.instagram.com/p/C2xY-xGtJez/" target="_blank">Day 1 Video</a></td>
+            </tr>
+            <tr>
+                <td>Day 2</td>
+                <td><a href="https://www.instagram.com/p/C2z0gZkO0hE/" target="_blank">Day 2 Video</a></td>
+            </tr>
+            <tr>
+                <td>Day 3</td>
+                <td><a href="https://www.instagram.com/p/C22kYahOj5x/" target="_blank">Day 3 Video</a></td>
+            </tr>
+            <tr>
+                <td>Day 4</td>
+                <td><a href="https://www.instagram.com/p/C25MKXXNQF-/" target="_blank">Day 4 Video</a></td>
+            </tr>
+            <tr>
+                <td>Day 5</td>
+                <td><a href="https://www.instagram.com/p/C27r7GLC9XS/" target="_blank">Day 5 Video</a></td>
+            </tr>
+            <!-- Repeat the above row for each day -->
+    
+            <!-- Add more rows as needed -->
+    
+        </table>
+    
     </section>
-    <table>
-        <tr>
-            <th>Day</th>
-            <th>Video Link</th>
-        </tr>
-        <!-- Repeat the following row for each day -->
-        <tr>
-            <td>Day 1</td>
-            <td><a href="https://www.instagram.com/p/C2xY-xGtJez/" target="_blank">Day 1 Video</a></td>
-        </tr>
-        <tr>
-            <td>Day 2</td>
-            <td><a href="https://www.instagram.com/p/C2z0gZkO0hE/" target="_blank">Day 1 Video</a></td>
-        </tr>
-        <tr>
-            <td>Day 3</td>
-            <td><a href="https://www.instagram.com/p/C22kYahOj5x/" target="_blank">Day 1 Video</a></td>
-        </tr>
-        <tr>
-            <td>Day 4</td>
-            <td><a href="https://www.instagram.com/p/C25MKXXNQF-/" target="_blank">Day 1 Video</a></td>
-        </tr>
-        <tr>
-            <td>Day 5</td>
-            <td><a href="https://www.instagram.com/p/C27r7GLC9XS/" target="_blank">Day 1 Video</a></td>
-        </tr>
-        <!-- Repeat the above row for each day -->
-
-        <!-- Add more rows as needed -->
-
-    </table>
     <footer>
         <p>&copy; 2024 30 Days Code Challenge. All rights reserved.</p>
     </footer>
