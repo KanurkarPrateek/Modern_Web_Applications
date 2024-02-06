@@ -21,22 +21,28 @@
         <h2>
             Add to cart simple project:
         </h2>
-        <button value="Add to cart" onclick="
+        <button onclick="
         console.log(`Cart quantity is ${objQuantity}`);" >
             Show quantity
         </button>
-        <button value="Add to cart" onclick="
-        objQunatity = objQuantity + 1;
+        <button onclick="
+        objQuantity++;
         console.log(`Cart quantity is ${objQuantity}`);">
             Add to cart
         </button>
-        <button value="+2">
+        <button onclick="
+        objQuantity=objQuantity + 2;
+        console.log(`Cart quantity is ${objQuantity}`)">
             +2
         </button>
-        <button value="+3">
+        <button value="+3" onclick="
+        objQuantity=objQuantity + 2;
+        console.log(`Cart quantity is ${objQuantity}`);">
             +3
         </button>
-        <button value="Reset">
+        <button value="Reset"onclick="
+        objQuantity=0;
+        console.log(`Cart quantity is ${objQuantity}`);">
             Reset the cart
         </button>
     </section>
