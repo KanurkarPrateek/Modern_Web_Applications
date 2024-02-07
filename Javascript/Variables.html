@@ -36,7 +36,7 @@
             +2
         </button>
         <button value="+3" onclick="
-        objQuantity=objQuantity + 2;
+        objQuantity=objQuantity + 3;
         console.log(`Cart quantity is ${objQuantity}`);">
             +3
         </button>
@@ -45,6 +45,13 @@
         console.log(`Cart quantity is ${objQuantity}`);">
             Reset the cart
         </button>
+        <div id="cart">
+            <h1>"Cart Quantity is 
+                <script>
+                    document.write(objQuantity);
+                </script>
+            </h1>
+        </div>
     </section>
     
 </body>
