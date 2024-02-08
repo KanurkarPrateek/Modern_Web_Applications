@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+            let compRes = Math.random();
+    </script>
+    <style>
+        button {
+            margin: 5px;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="
+        console.log(`Computer Choose ${compRes}`);
+        ">
+        Generate Random res.
+    </button>
+    <button onclick="
+     if(compRes<(0.33333)){
+        alert(`tie`);
+     }
+     else if( compRes<(0.33333) && compRes>(0.7) ) {
+        alert(`You Lose , computer choose Paper`);
+     }
+     else{
+        alert(`You won, Computer Choose Scissors`);
+     }
+    ">
+        Rock
+    </button>
+    <button onclick="
+    if(compRes<(0.33333)){
+       alert(`You won , computer choose Paper`);
+    }
+    else if( compRes<(0.33333) && compRes>(0.7) ) {
+       alert(`tie`);
+    }
+    else{
+       alert(`You Lose, Computer Choose Scissors`);
+    }
+   ">
+        Paper
+    </button>
+    <button onclick="
+     if(compRes<(0.33333)){
+        alert(`You won , computer chooses rock`);
+     }
+     else if( compRes<(0.33333) && compRes>(0.7) ) {
+        alert(`You Lose , computer choose scissors`);
+     }
+     else{
+        alert(`tie`);
+     }
+    ">
+        Scissors
+    </button>
+</body>
+</html>
