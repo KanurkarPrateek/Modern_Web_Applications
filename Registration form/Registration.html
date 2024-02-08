@@ -5,15 +5,32 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Registration Form</title>
 <style>
-    /* Basic styling for the form */
     body {
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: url(./wp13507718-astronaut-space-4k-wallpapers.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .form-container {
+        width: 300px;
+        margin: auto;
+        padding: 30px;
+        background: rgba(255, 255, 255, 0.3);
+        background: rgba(255, 255, 255, 0.41);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(7.9px);
+        -webkit-backdrop-filter: blur(7.9px);
+        border: 1px solid rgba(255, 255, 255, 0.8);  
     }
     form {
-        width: 300px;
-        margin: 20px auto;
+        width: 100%;
     }
     input[type="text"],
     input[type="email"],
@@ -21,6 +38,7 @@
         width: 100%;
         padding: 10px;
         margin: 5px 0;
+        border-radius: 12px;
         box-sizing: border-box;
     }
     input[type="submit"] {
@@ -30,8 +48,9 @@
         padding: 10px 0;
         margin-top: 10px;
         border: none;
-        border-radius: 5px;
+        border-radius: 12px;
         cursor: pointer;
+        border: #353535 solid 2px;
     }
     input[type="submit"]:hover {
         background-color: #45a049;
@@ -40,37 +59,34 @@
 </head>
 <body>
 
-<form id="registrationForm">
-    <h2>Registration Form</h2>
-    <input type="text" id="fullName" placeholder="Full Name" required>
-    <input type="email" id="email" placeholder="Email" required>
-    <input type="password" id="password" placeholder="Password" required>
-    <input type="submit" value="Register">
-</form>
+<div class="form-container">
+    <form id="registrationForm">
+        <h2>Registration Form</h2>
+        <input type="text" id="fullName" placeholder="Full Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <input type="submit" value="Register">
+    </form>
+</div>
 
 <script>
-    // JavaScript code to handle form submission
+
     document.getElementById("registrationForm").addEventListener("submit", function(event) {
-        event.preventDefault(); // Prevent default form submission
-        
-        // Get form values
+        event.preventDefault(); 
         var fullName = document.getElementById("fullName").value;
         var email = document.getElementById("email").value;
         var password = document.getElementById("password").value;
-        
-        // Do validation here if needed
-        
-        // Create an object to store user data
+
         var userData = {
             fullName: fullName,
             email: email,
             password: password
         };
         
-        // Display welcome message
+
         alert("Welcome, " + fullName + "!");
         
-        // Clear form fields after submission
+
         document.getElementById("registrationForm").reset();
     });
 </script>
