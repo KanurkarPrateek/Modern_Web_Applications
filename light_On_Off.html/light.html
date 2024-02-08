@@ -18,6 +18,10 @@
     width: 90px;
     border-radius: 12px;
     background-color: lightgreen;
+    border-radius: 43px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  15px 15px 29px #bebebe,
+                -15px -15px 29px #ffffff;
   }
   button:hover{
     background-color: red;
@@ -28,9 +32,9 @@
     height: 100px;
     background-color: gray;
     border-radius: 50%;
-    background: #e0e0e0;
-    box-shadow:  14px 14px 28px #bebebe,
-                -14px -14px 28px #ffffff;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  19px 19px 38px #bebebe,
+             -19px -19px 38px #ffffff;
   }
 </style>
 </head>
@@ -46,7 +50,7 @@ function toggleLight() {
     light.style.backgroundColor = "gray";
     light.style.color="yellow";
   } else {
-    light.style.backgroundColor = "yellow";
+    light.style.background = "linear-gradient(145deg, #fffc38, #fcf700)";
     light.style.color = "gray";
   }
 }

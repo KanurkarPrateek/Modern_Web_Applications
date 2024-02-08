@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ</title>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-image: url(./wp13466027-breaking-bad-laptop-wallpapers.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    h1{
+        z-index: 1;
+    }
+    .faqContainer{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+        width: 60%;
+        margin: 0 auto;
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(7.9px);
+        -webkit-backdrop-filter: blur(7.9px);
+        border: 1px solid rgba(255, 255, 255, 0.8);
+    }
+    .faq-item {
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(7.9px);
+        -webkit-backdrop-filter: blur(7.9px);
+        border: 1px solid rgba(255, 255, 255, 0.8);
+    summary {
+        cursor: pointer;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+<div class="faqContainer">
+<h1>Frequently Asked Questions</h1>
+
+<div class="faq-item">
+    <details>
+        <summary>What is Lorem Ipsum?</summary>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+    </details>
+</div>
+
+<div class="faq-item">
+    <details>
+        <summary>Why do we use it?</summary>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout...</p>
+    </details>
+</div>
+
+<div class="faq-item">
+    <details>
+        <summary>Where does it come from?</summary>
+        <p>Contrary to popular belief, Lorem Ipsum is not simply random text...</p>
+    </details>
+</div>
+
+<div class="faq-item">
+    <details>
+        <summary>Where can I get some?</summary>
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form...</p>
+    </details>
+</div>
+</div>
+</body>
+</html>
