@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fun Button</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+    #funButton {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        background-color: #4CAF50;
+        color: white;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+    #funButton:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+
+<h2>Click the button for some fun!</h2>
+
+<button id="funButton">Click Me!</button>
+
+<script>
+    document.getElementById("funButton").addEventListener("click", function() {
+        var colors = ["#FF5733", "#33FF57", "#5733FF", "#FFFF33", "#33FFFF", "#FF33FF"];
+        var randomColor = colors[Math.floor(Math.random() * colors.length)];
+        document.body.style.backgroundColor = randomColor;
+    });
+</script>
+
+</body>
+</html>
