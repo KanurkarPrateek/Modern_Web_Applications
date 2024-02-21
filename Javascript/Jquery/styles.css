@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url(./4243109.jpg);
+    background-size: cover;
+  }
+  
+  #container {
+    width: 50%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 700px;
+    height: 375px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    backdrop-filter: blur(7px) saturate(170%);
+    -webkit-backdrop-filter: blur(7px) saturate(170%);
+    background-color: rgba(17, 25, 40, 0.26);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+  
+  h1 {
+    color: #f4f4f4;
+    text-align: center;
+    font-size: x-large;
+  }
+  
+  #taskInput {
+    color: #f4f4f4;
+    width: 70%;
+    padding: 8px;
+    font-size: 20px;
+    backdrop-filter: blur(7px) saturate(170%);
+    -webkit-backdrop-filter: blur(7px) saturate(170%);
+    background-color: rgba(17, 25, 40, 0.26);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+  }
+  
+  #addTask {
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    backdrop-filter: blur(7px) saturate(170%);
+    -webkit-backdrop-filter: blur(7px) saturate(170%);
+    background-color: rgba(17, 25, 40, 0.26);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+  }
+  
+  #taskList {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .taskItem {
+    color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    
+  }
+  
+  .taskItem.completed {
+    text-decoration: line-through;
+    color: #ffffff;
+  }
+  
+  .taskItem button {
+    color: #f4f4f4;
+    width: 110px;
+    padding: 8px;
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    backdrop-filter: blur(7px) saturate(170%);
+    -webkit-backdrop-filter: blur(7px) saturate(170%);
+    
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+  }
+  
