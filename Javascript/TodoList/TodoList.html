@@ -1,54 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TODO List</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <H1>TODO LIST</H1>
-    <input type="text" id="newTaskField" placeholder="New Task..."><br><br>
-    <button id="addTaskButton">Add Task</button>
+  <div class="container">
+    <h1>To-Do List</h1>
+    <input type="text" id="taskInput" placeholder="Add new task">
+    <button id="addTaskBtn">Add Task</button>
     <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
 </body>
-<script>
-    let tasks = []; // Array to store the tasks
-    const taskList = document.getElementById("taskList");
-
-    document.getElementById("addTaskButton").addEventListener('click', () => {
-        const taskInput = document.getElementById("newTaskField");
-        const task = taskInput.value.trim();
-        
-        if(task) {
-            tasks.push(task);
-            displayTasks();
-            taskInput.value = "";
-        } else {
-            alert("Please enter a valid task");
-        }
-    });
-
-    function displayTasks(){
-        // Clear previous tasks
-        taskList.innerHTML = "";
-
-        tasks.forEach((task, index) => {
-            const li = document.createElement("li");
-            li.textContent = task;
-            
-            const delBtn = document.createElement("button");
-            delBtn.textContent = "Delete";
-            delBtn.style.marginLeft = "5px";
-            delBtn.addEventListener("click", () => deleteTask(index));
-            
-            li.appendChild(delBtn);
-            taskList.appendChild(li);
-        });
-    }
-
-    function deleteTask(index){
-        tasks.splice(index, 1);
-        displayTasks();
-    }
-</script>
 </html>
