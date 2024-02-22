@@ -3,7 +3,7 @@ $(document).ready(function() {
     function addTask() {
       var taskText = $('#taskInput').val().trim();
       if (taskText !== '') {
-        var taskItem = $('<li class="taskItem" style="font-size:Larger;"><h3></h3></li>').text(taskText);
+        var taskItem = $('<li class="taskItem" ></li>').text(taskText);
         var deleteButton = $('<button style="background-color: rgba(248, 19, 19, 0.26);">Delete</button>').click(function() {
           $(this).parent().remove();
         });
